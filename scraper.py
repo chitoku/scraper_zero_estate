@@ -21,6 +21,6 @@ dates = tree.xpath('//div[@class="blog_info"]/p/i')
 print(prettyprint(dates[0]))
 
 # Only save the top item in the HTML file
-filename = 'okayama.html'
+filename = 'okayama.md'
 with open(filename, 'w') as modified:
   modified.write('<dl><dd>' + prettyprint(dates[0]) + ' ' + prettyprint(properties[0]) + '</dd></dl>\n')
